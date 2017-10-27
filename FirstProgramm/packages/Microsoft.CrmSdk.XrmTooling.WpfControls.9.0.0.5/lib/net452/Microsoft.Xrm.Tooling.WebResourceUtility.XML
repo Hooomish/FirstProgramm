@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>Microsoft.Xrm.Tooling.WebResourceUtility</name>
+  </assembly>
+  <members>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.ImageResources.#ctor(Microsoft.Xrm.Tooling.Connector.CrmServiceClient)">
+      <summary>
+        <para>Constructs a class used to retrieve image resources from CRM..</para>
+      </summary>
+      <param name="crmServiceConnection">
+        <para>Initialized copy of a CrmServiceClient object</para>
+      </param>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.ImageResources.GetImageFromCRMWebResource(System.String)">
+      <summary>
+        <para>Returns BitMap Image Resource from CRM</para>
+      </summary>
+      <param name="webResourceName">
+        <para>Image Resource Name requested</para>
+      </param>
+      <returns>
+        <para>Returns Null if the Image is not found, or the resource type is not an Image.</para>
+      </returns>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.TraceControlSettings.#ctor">
+      <summary>
+        <para />
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.TraceControlSettings.AddTraceListener(System.Diagnostics.TraceListener)">
+      <summary>
+        <para>Adds a listener to the trace listen array</para>
+      </summary>
+      <param name="listenerToAdd">
+        <para>Trace Listener you wish to add</para>
+      </param>
+      <returns>
+        <para>true on success, false on fail.</para>
+      </returns>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.TraceControlSettings.CloseListeners">
+      <summary>
+        <para>Closes any trace listeners that were configured</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.TraceLogger.#ctor(System.String)">
+      <summary>
+        <para />
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.TraceLogger.Log(System.Exception)">
+      <summary>
+        <para>Log an error with an Exception</para>
+      </summary>
+      <param name="exception">
+        <para />
+      </param>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.TraceLogger.Log(System.String)">
+      <summary>
+        <para>Log a Message</para>
+      </summary>
+      <param name="message">
+        <para />
+      </param>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.TraceLogger.Log(System.String,System.Diagnostics.TraceEventType)">
+      <summary>
+        <para>Log a Trace event</para>
+      </summary>
+      <param name="message">
+        <para />
+      </param>
+      <param name="eventType">
+        <para />
+      </param>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.TraceLogger.Log(System.String,System.Diagnostics.TraceEventType,System.Exception)">
+      <summary>
+        <para>Log a Trace event</para>
+      </summary>
+      <param name="message">
+        <para />
+      </param>
+      <param name="eventType">
+        <para />
+      </param>
+      <param name="exception">
+        <para />
+      </param>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.TraceLogger.ResetLastError">
+      <summary>
+        <para />
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.XmlResources.#ctor(Microsoft.Xrm.Tooling.Connector.CrmServiceClient)">
+      <summary>
+        <para>Constructs a class used to retrieve an XML resources from CRM..</para>
+      </summary>
+      <param name="crmServiceConnection">
+        <para>Initialized copy of a CrmServiceClient object</para>
+      </param>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="M:Microsoft.Xrm.Tooling.WebResourceUtility.XmlResources.GetXmlFromCRMWebResource(System.String)">
+      <summary>
+        <para>Returns Xml Resource from CRM</para>
+      </summary>
+      <param name="webResourceName">
+        <para>Xml Resource Name requested</para>
+      </param>
+      <returns>
+        <para>Returns Null if the Xml is not found, or Xml document as text.</para>
+      </returns>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="P:Microsoft.Xrm.Tooling.WebResourceUtility.TraceControlSettings.TraceLevel">
+      <summary>
+        <para>Override Trace Level setting.</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="T:Microsoft.Xrm.Tooling.WebResourceUtility.ImageResources">
+      <summary>
+        <para>Web Resource actions for dealing with Image Resources.</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="T:Microsoft.Xrm.Tooling.WebResourceUtility.TraceControlSettings">
+      <summary>
+        <para>This class provides an override for the default trace settings. These settings must be set before the components in the control are used for them to be effective.</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="T:Microsoft.Xrm.Tooling.WebResourceUtility.TraceLogger">
+      <summary>
+        <para />
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="T:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType">
+      <summary>
+        <para>Format of the WebResource</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.Webpage_HTML">
+      <summary>
+        <para>Html type</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.StyleSheet_CSS">
+      <summary>
+        <para>CSS</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.Script_JScript">
+      <summary>
+        <para>JScript</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.Data_XML">
+      <summary>
+        <para>XML</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.PNGformat">
+      <summary>
+        <para>PNG</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.JPGformat">
+      <summary>
+        <para>JPG</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.GIFformat">
+      <summary>
+        <para>GIF</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.Silverlight_XAP">
+      <summary>
+        <para>XAP</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.StyleSheet_XSL">
+      <summary>
+        <para>XSL</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="F:Microsoft.Xrm.Tooling.WebResourceUtility.WebResourceWebResourceType.ICOformat">
+      <summary>
+        <para>ICO</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+    <member name="T:Microsoft.Xrm.Tooling.WebResourceUtility.XmlResources">
+      <summary>
+        <para>This class is used to access and retrieve web</para>
+      </summary>
+      <remarks>
+        <para />
+      </remarks>
+    </member>
+  </members>
+</doc>

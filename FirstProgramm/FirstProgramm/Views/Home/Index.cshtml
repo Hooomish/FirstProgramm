@@ -1,4 +1,76 @@
-﻿<div class="jumbotron">
+﻿<!--<div id="CreateBlock">
+    <p><b>Создание сущности</b></p>
+    <table>
+        <tr><td>Name:</td><td><input type="text" id="addName"/></td></tr>
+        <tr><td>Desription:</td><td><input type="text" id="addDescription"/></td></tr>
+    </table>
+    <button id="addEntity">Add</button>
+</div>
+<div id="tableBlock">
+    <h3>Entity</h3>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>Description:</td>
+        </tr>
+    </table>
+</div>
+
+section scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //GetAllEntity();
+
+            $("#addEntity").click(function (event) {
+                event.preventDefault();
+                AddEntity();
+            });
+        });
+
+        function AddEntity() {
+            var entity = {
+                DisplayName: $('#addName').val(),
+                Description: $('#addDescription').val()
+            };
+
+            $.ajax({
+                url: '/api/values/',
+                type: 'POST',
+                data: JSON.stringify(entity),
+                contenttype: "application/json; charset=utf-8"
+            });
+        }
+
+        //function GetAllEntity()
+        //{
+        //    $ajax(
+        //        {
+        //            url: 'api/values',
+        //            type: 'GET',
+        //            dataType: 'json',
+        //            succeess: function(entity)
+        //            {
+        //                WriteResponce(entity);
+        //            }
+        //        });
+        //}
+
+        //function WriteResponse(entities) {
+        //    var strResult = "<table><th>Name:</th><th>Название</th><th>Description:</th>";
+        //    $.each(entities, function (index, entity) {
+        //        strResult += "<tr><td>" + entity.Name + "</td><td> " + entity.Description + "</td><td>" ;
+        //    });
+        //    strResult += "</table>";
+        //    $("#tableBlock").html(strResult);
+
+        //}
+
+    //</script>
+}
+
+<div class="jumbotron">
     <h1>ASP.NET</h1>
     <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
@@ -22,3 +94,4 @@
         <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
     </div>
 </div>
+    -->
